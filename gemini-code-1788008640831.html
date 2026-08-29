@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A GYM — Твій силовий простір у Львові</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#E5FF00',
+                            dark: '#0F1115',
+                            card: '#181B22',
+                            border: '#2A2E39',
+                            textMuted: '#9CA3AF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F1115;
+            color: #FFFFFF;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(229, 255, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-yellow selection:text-black">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black tracking-wider uppercase text-white">
+                A <span class="text-brand-yellow">GYM</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-semibold text-sm">
+                <a href="#about" class="hover:text-brand-yellow transition">Про нас</a>
+                <a href="#zones" class="hover:text-brand-yellow transition">Зони та обладнання</a>
+                <a href="#pricing" class="hover:text-brand-yellow transition">Абонементи</a>
+                <a href="#schedule" class="hover:text-brand-yellow transition">Розклад</a>
+                <a href="#contacts" class="hover:text-brand-yellow transition">Контакти</a>
+            </div>
+            <a href="#lead-form" class="bg-brand-yellow text-black font-bold px-5 py-2.5 rounded-lg hover:bg-yellow-300 transition text-sm">
+                Перше тренування
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-3 py-1 bg-brand-card border border-brand-border rounded-full text-brand-yellow text-xs font-bold uppercase tracking-widest mb-4">
+                    Львів • вул. Олександра Кониського, 9
+                </span>
+                <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none mb-6">
+                    Класична сила <br><span class="text-brand-yellow">без зайвого пафосу</span>
+                </h1>
+                <p class="text-brand-textMuted text-lg mb-8 max-w-lg">
+                    A GYM — це простір для тих, хто цінує реальні результати. Повний набір силових рами, важких гантелей, силогового та кардіо обладнання для твого прогресу.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#pricing" class="bg-brand-yellow text-black text-center font-extrabold px-8 py-4 rounded-xl hover:bg-yellow-300 transition glow-effect">
+                        Обрати абонемент
+                    </a>
+                    <a href="#zones" class="border border-brand-border text-white text-center font-bold px-8 py-4 rounded-xl hover:bg-brand-card transition">
+                        Огляд залу
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-96 md:h-[450px] bg-brand-card border border-brand-border rounded-2xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="A GYM Interior" class="w-full h-full object-cover opacity-80">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 p-4 bg-brand-dark/80 backdrop-blur border border-brand-border rounded-xl">
+                        <div class="text-sm font-bold text-white">Пн - Пт: 09:00 - 22:30</div>
+                        <div class="text-xs text-brand-textMuted">Сб: 09:00 - 21:30 | Нд: Вихідний</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES / ZONES SECTION -->
+    <section id="zones" class="py-20 bg-brand-dark border-t border-brand-border px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4">Оснащення залу</h2>
+                <p class="text-brand-textMuted">Все необхідне для пауерліфтингу, бодібілдингу та функціонального тренінгу.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+                    <div class="w-12 h-12 bg-brand-yellow/10 rounded-xl flex items-center justify-center text-brand-yellow font-bold text-xl mb-6">01</div>
+                    <h3 class="text-xl font-bold mb-3">Силова зона & Squat Racks</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        Силові рами, стійки для присідань, лави для жиму під різними кутами та олімпійські грифи з гумованими млинцями.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+                    <div class="w-12 h-12 bg-brand-yellow/10 rounded-xl flex items-center justify-center text-brand-yellow font-bold text-xl mb-6">02</div>
+                    <h3 class="text-xl font-bold mb-3">Гантельний ряд & Гирі</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        Повний гантельний ряд від 1 кг до важких ваг, а також набір гирь різної ваги для функціональних навантажень.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+                    <div class="w-12 h-12 bg-brand-yellow/10 rounded-xl flex items-center justify-center text-brand-yellow font-bold text-xl mb-6">03</div>
+                    <h3 class="text-xl font-bold mb-3">Блочні тренажери</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        Кросовери, тягові блоки, тренажери для ніг та ізольованого опрацювання м'язів спини і грудей.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-20 px-6 bg-brand-dark/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4">Абонементи</h2>
+                <p class="text-brand-textMuted">Прості та зрозумілі тарифи без прихованих платежів.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Разове відвідування</h3>
+                        <div class="text-4xl font-black text-white mb-6">200 <span class="text-lg font-normal text-brand-textMuted">грн</span></div>
+                        <ul class="space-y-4 text-sm text-brand-textMuted mb-8">
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Безлімітний час на тренування</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Доступ до всіх зон залу</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Роздягальня та душ</li>
+                        </ul>
+                    </div>
+                    <a href="#lead-form" class="w-full py-3 bg-brand-border text-center font-bold rounded-xl hover:bg-gray-700 transition">Обрати</a>
+                </div>
+
+                <!-- Standard (Featured) -->
+                <div class="bg-brand-card p-8 rounded-2xl border-2 border-brand-yellow relative flex flex-col justify-between glow-effect">
+                    <span class="absolute -top-3 right-6 bg-brand-yellow text-black text-xs font-black uppercase px-3 py-1 rounded-full">Популярний</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Безліміт 1 Місяць</h3>
+                        <div class="text-4xl font-black text-white mb-6">1,200 <span class="text-lg font-normal text-brand-textMuted">грн</span></div>
+                        <ul class="space-y-4 text-sm text-brand-textMuted mb-8">
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Необмежена кількість відвідувань</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Доступ у будь-який час роботи</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Вступне інструктування від тренера</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Шафка для речей</li>
+                        </ul>
+                    </div>
+                    <a href="#lead-form" class="w-full py-3 bg-brand-yellow text-black text-center font-extrabold rounded-xl hover:bg-yellow-300 transition">Замовити зараз</a>
+                </div>
+
+                <!-- Student / Day -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Студентський / Денний</h3>
+                        <div class="text-4xl font-black text-white mb-6">950 <span class="text-lg font-normal text-brand-textMuted">грн</span></div>
+                        <ul class="space-y-4 text-sm text-brand-textMuted mb-8">
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Вхід до 16:00 у будні дні</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> Безліміт у вихідні</li>
+                            <li class="flex items-center"><span class="text-brand-yellow mr-2">✓</span> За наявності студентського квитка</li>
+                        </ul>
+                    </div>
+                    <a href="#lead-form" class="w-full py-3 bg-brand-border text-center font-bold rounded-xl hover:bg-gray-700 transition">Обрати</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEAD CAPTURE FORM SECTION -->
+    <section id="lead-form" class="py-20 px-6 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-3xl mx-auto bg-brand-card p-8 md:p-12 rounded-3xl border border-brand-border">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-black uppercase mb-2">Записатися на перше тренування</h2>
+                <p class="text-brand-textMuted text-sm">Залиште свої контакти, і ми зателефонуємо для підтвердження деталізації.</p>
+            </div>
+            <form onsubmit="event.preventDefault(); alert('Дякуємо! Ми зв\'яжемося з вами найближчим часом.');" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-brand-textMuted mb-2">Ваше ім'я</label>
+                    <input type="text" required placeholder="Олександр" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-brand-textMuted mb-2">Номер телефону</label>
+                    <input type="tel" required placeholder="+380 (97) 000-00-00" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow">
+                </div>
+                <button type="submit" class="w-full bg-brand-yellow text-black font-extrabold py-4 rounded-xl hover:bg-yellow-300 transition">
+                    Надіслати заявку
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER & MAP -->
+    <footer id="contacts" class="py-12 bg-black border-t border-brand-border px-6 text-brand-textMuted text-sm">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <div class="text-xl font-black text-white uppercase mb-4">A <span class="text-brand-yellow">GYM</span></div>
+                <p class="mb-2">📍 вул. Олександра Кониського, 9, Львів, Львівська область, 79000</p>
+                <p class="mb-2">📞 +380 322 756 674</p>
+                <p>⏰ Пн–Пт: 09:00–22:30 | Сб: 09:00–21:30 | Нд: Зачинено</p>
+            </div>
+            <div class="text-left md:text-right">
+                <p>© 2026 A GYM Lviv. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
